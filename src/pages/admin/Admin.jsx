@@ -5,7 +5,7 @@ import SingleRouteHeader from '../../components/singleRouteHeader/SingleRouteHea
 const Admin = () => {
   return (
     <div className='admin-page'>
-      <div className="admin-page_content">
+      <div className="admin-page__content">
         <aside className="admin__sidebar">
           <ul>
               <li><NavLink className={"admin__sidebar-link"} to={"/admin/create"}>Create product</NavLink></li>
