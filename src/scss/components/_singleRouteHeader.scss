@@ -1,0 +1,40 @@
+.single-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+    padding: 20px 0;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            svg {
+                font-size: 14px;
+                color: #3BB77E;
+            }
+            p {
+                font-family: Quicksand;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                color: #3BB77E;
+            }
+        }
+        .notGreen {
+            p {
+                color: #7E7E7E !important;
+            }
+        }
+        a:last-child {
+            p {
+                color: #7E7E7E;
+            }
+        }
+        span {
+            color: #7E7E7E;
+        }
+    }
+}
