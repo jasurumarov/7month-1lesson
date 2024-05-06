@@ -74,7 +74,7 @@ const CreateProducts = () => {
           <div className="products-section__product__price">
               <div>
                   <p>${data.price ? data.price : "999"}</p>
-                  <span><del>${Math.round(900 * 2)}</del></span>
+                  <span><del>${data.price ? Math.round(data.price * 2) : Math.round(900 * 2)}</del></span>
               </div>
               <button>
                 <RiShoppingCart2Line />
