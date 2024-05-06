@@ -1,6 +1,7 @@
 .single-header {
     margin-bottom: 30px;
     border-bottom: 1px solid #ECECEC;
+    background: white;
     padding: 20px 0;
     nav {
         display: flex;
@@ -24,11 +25,13 @@
             }
         }
         .notGreen {
+            cursor: pointer;
             p {
                 color: #7E7E7E !important;
             }
         }
-        a:last-child {
+        div:last-child {
+            cursor: pointer;
             p {
                 color: #7E7E7E;
             }

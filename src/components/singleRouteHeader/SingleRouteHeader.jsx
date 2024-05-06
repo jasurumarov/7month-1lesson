@@ -12,13 +12,13 @@ const SingleRouteHeader = ({name, arr, sname}) => {
                     <p>Home</p>
                 </Link>
                 <span>&gt;</span>
-                <Link className={name === "Login" || name === "Admin" ? 'notGreen' : ""} to={"/"}>
+                <div className={name === "Login" || name === "Admin" ? 'notGreen' : ""} to={"/"}>
                     <p>{name}</p>
-                </Link>
+                </div>
                 <span>{arr}</span>
-                <Link>
+                <div>
                     <p>{sname}</p>
-                </Link>
+                </div>
             </nav>
         </div>
     </div>

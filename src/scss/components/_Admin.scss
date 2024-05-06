@@ -1,11 +1,35 @@
 .admin-page {
-    .admin-content {
+    .admin-page_content {
         width: 100%;
         display: grid;
+        background: rgb(245, 246, 250);
         grid-template-columns: 300px 1fr;
         .admin__sidebar{
-            height: 100vh;
-            background: dodgerblue;
+            background: white;
+            height: 100%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    .admin__sidebar-link__home.active {
+                        background: green !important;
+                        color: black !important;
+                    }
+                    .admin__sidebar-link {
+                        display: block;
+                        font-weight: 600;
+                        padding: 22px;
+                    }
+                    .admin__sidebar-link.active {
+                        background: #3BB77E;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .admin__content-outlet {
+            margin-top: -10px;
+            padding: 0 20px;
         }
     }
 }
