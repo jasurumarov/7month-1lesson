@@ -84,6 +84,25 @@ const CreateProducts = () => {
           <p className="products-section__product__brand">{data.category ? data.category : "Product's category"}</p>
         </div>
       </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <br />
     </div>
   )
 }
