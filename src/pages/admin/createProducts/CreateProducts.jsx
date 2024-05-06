@@ -31,11 +31,13 @@ const CreateProducts = () => {
 
   const handlePriceChange = e => {
     const input = e.target.value;
-    const numericInput = /^[0-9]*$/;
+    // Check if the input consists entirely of digits and has no more than 6 characters
+    const numericInput = /^[0-9]{0,6}$/;
     if (numericInput.test(input) || input === '') {
       setData(prev => ({...prev, price: input}));
     }
   };
+  
   
   
   return (
