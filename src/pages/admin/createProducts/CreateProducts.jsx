@@ -1,6 +1,7 @@
 import { Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import axios from '../../../api'
+import { toast } from 'react-toastify'
 
 const initialState = {
   title: "",
@@ -15,7 +16,11 @@ const CreateProducts = () => {
     e.preventDefault()
     axios 
       .post("/products", data)
-      .then(res => console.log(res))
+      .then(res => {
+        toast.success("Succesfully created")
+        console.log(res)
+        setData(initialState)
+      })
       .catch(err => console.log(err))
   }
   return (
