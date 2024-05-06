@@ -55,7 +55,7 @@ const Header = () => {
                                 <GrCart />
                                 <span>Cart</span>
                             </Link>
-                            <Link className='main-header__nav--btns' to={`${token ? "/admin" : "/register"}`}>
+                            <Link className='main-header__nav--btns' to={`${token ? "/admin/create" : "/register"}`}>
                                 <LuUser />
                                 <span>{token ? "Admin" : "Account"}</span>
                             </Link>
