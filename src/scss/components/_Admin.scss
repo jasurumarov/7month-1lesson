@@ -1,5 +1,6 @@
 .admin-page {
     .admin-page__content {
+        height: 100vh;
         width: 100%;
         display: grid;
         background: rgb(245, 246, 250);
@@ -30,13 +31,176 @@
         .admin__content-outlet {
             margin-top: -10px;
             padding: 0 20px;
-            form {
-                margin: 20px 0;
+            .create-products {
                 display: flex;
-                flex-direction: column;
-                gap: 40px;
-                .form__input {
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 60px;
+                form {
+                    max-width: 800px;
                     width: 100%;
+                    margin: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    .form__input {
+                        width: 100%;
+                    }
+                }
+                .products-section__product {
+                    background: white;
+                    position: relative;
+                    max-width: 298px;
+                    border: 1px solid #ECECEC;
+                    border-radius: 15px;
+                    padding: 25px 21px 21px 21px;
+                    overflow: hidden;
+                    &:hover {
+                        .products-section__product__img {
+                            img {
+                                transform: scale(104%);
+                            }
+                        }
+                    }
+                    .products-section__product__img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 246px;
+                        height: 246px;
+                        background: white;
+                        img {
+                            object-fit: contain;
+                            transition: .3s;
+                            width: 206px;
+                            height: 206px;
+                        }
+                    }
+                    .products-section__product__type {
+                        font-family: Lato;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #ADADAD;
+                        margin-top: 5px;
+                        margin-bottom: 9px;
+                    }
+                    .products-section__product__title {
+                        font-family: Quicksand;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0.47999998927116394px;
+                        color: #2B2B2D;
+                        margin-bottom: 8px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;
+                    }
+                    .products-section__product__rating {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin-bottom: 7px;
+                        span {
+                            display: flex;
+                            gap: 1px;
+                            .rate {
+                                color: #FDC040;
+                            }
+                            .unrate {
+                                color: #B6B6B6;
+                            }
+                        }
+                        h5 {
+                            font-family: Lato;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #B6B6B6;
+                        }
+                    }
+                    .products-section__product__company {
+                        font-family: Lato;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #B6B6B6;
+                        margin-bottom: 19px;
+                        span {
+                            font-family: Lato;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #3BB77E;
+                        }
+                    }
+                    .products-section__product__price {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            p {
+                                color: #3BB77E;
+                                font-family: Quicksand;
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+                            span {
+                                font-family: Quicksand;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: #ADADAD;
+                            }
+                        }
+                        button {
+                            cursor: pointer;
+                            background: #DEF9EC;
+                            color: #3BB77E;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            border-radius: 4px;
+                            padding: 10px 20px;
+                            font-family: Lato;
+                            font-weight: 700;
+                            &:active {
+                                transition: .2s;
+                                scale: .97;
+                            }
+                            &:hover {
+                                transition: .2s;
+                                color: white;
+                                background: #3BB77E;
+                                svg {
+                                    color: white;
+                                }
+                            }
+                            svg {
+                                font-size: 18px;
+                                color: #3BB77E;
+                            }
+                        }
+                    }
+                    .products-section__product__brand {
+                        position: absolute;
+                        font-family: Lato;
+                        top: 0;
+                        left: 0;
+                        background: #3BB77E;
+                        padding: 8px 20px;
+                        color: #FFFFFF;
+                        border-radius: 0px 0px 20px 0px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 12px;
+                    }
                 }
             }
         }
