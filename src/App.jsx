@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <AnimCursor/>
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
 
       <Header/>
 
